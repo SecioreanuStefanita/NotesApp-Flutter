@@ -1,16 +1,13 @@
-# news_app
+# Wispers Note App
 
-A news app with login
+A Sticky Notes App with Firebase Login/Register
 
-## Getting Started
+## Functionalities
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Login and Register with Firebase
+-Add, Remove, Edit Notes
+-View profile page with firebase data and no of notes
+-Saving locally the notes
+-Custom Grid view for the notes
+-Drawer Menu
+-Logout
