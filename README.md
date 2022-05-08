@@ -11,3 +11,6 @@ A Sticky Notes App with Firebase Login/Register
  - Custom Grid view for the notes
  - Drawer Menu
  - Logout
+## To run
+ 
+ Make sure to import all the necesary libraries.
