@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../main.dart';
+import 'notes_page.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -52,7 +53,7 @@ class NavDrawer extends StatelessWidget {
                     bottomRight: Radius.circular(16)),
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage('assets/images/cover.jpg'))),
+                    image: AssetImage('https://www.pinterest.com/pin/589197563727182035/'))),
           ),
           ListTile(
             leading: Icon(Icons.account_circle_outlined),
@@ -64,23 +65,12 @@ class NavDrawer extends StatelessWidget {
             child: const Divider(),
           ),
           ListTile(
-            leading: Icon(Icons.newspaper_outlined),
-            title: Text('News'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.favorite_outline_rounded),
-            title: Text('My Favourites'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 32.0),
-            child: const Divider(),
-          ),
-          ListTile(
             leading: Icon(Icons.home_rounded),
-            title: Text('About'),
-            onTap: () => {},
+            title: Text('My notes'),
+            onTap: ()  {
+    Navigator.of(context).pop();
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => NotesPage()));},
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),

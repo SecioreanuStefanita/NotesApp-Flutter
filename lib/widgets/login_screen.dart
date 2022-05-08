@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:news_app/main.dart';
 import 'package:news_app/widgets/registration_screen.dart';
 
+import 'notes_page.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -97,7 +99,7 @@ class _LoginState extends State<Login> {
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor:Colors.white,
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -168,7 +170,7 @@ class _LoginState extends State<Login> {
           .signInWithEmailAndPassword(email: email, password: password)
           .then((uid) => {
                 Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => MyHomePage()))
+                    MaterialPageRoute(builder: (context) => NotesPage()))
               })
           .catchError((e) {});
     }
